@@ -1,4 +1,6 @@
-make re
+make fclean
+make push_swap
+make checker
 
 clear
 echo "\033[33;1m author: \033[0m" | tr -d "\n"
@@ -358,4 +360,5 @@ then
 	done
 fi
 
+make re
 rm -rf *.dSYM
