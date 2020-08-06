@@ -344,7 +344,7 @@ do
 		echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
 		errm[count]=$ARG
 	else
-		echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
+		echo "\033[37;1;44m ✓\033[0m" | tr -d "\n"
 	fi
 done
 echo ""
