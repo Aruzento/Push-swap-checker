@@ -1,4 +1,5 @@
 make re
+make clean
 
 clear
 echo "\033[33;1m author: \033[0m" | tr -d "\n"
