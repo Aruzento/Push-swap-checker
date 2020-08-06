@@ -1,5 +1,7 @@
-clear
+make re
+make clean
 
+clear
 echo "\n\t\033[33;1m Valid check: \033[0m"
 echo "\033[1m[e_char:]\t[w_num:]\t[mx_int:]\t\033[0m"
 for (( count=1; count<3; count++ ))
@@ -217,6 +219,54 @@ do
 	fi
 done
 echo "\n"
+if ((${errm[count]}))
+then
+	echo "\n\033[33;1m Err arguments: \033[0m"
+	for (( count=0; count<10; count++ ))
+	do
+		if ((${errm[count]}))
+		then
+			echo "[ " ${errm[count]} " ]"
+		fi
+	done
+fi
+
+echo "\t\033[33;1m Valgrind check: \033[0m"
+errm=()
+for (( count=1; count<10; count++ ))
+do
+	ARG=`ruby -e "puts (-250..249).to_a.shuffle.join(' ')"`
+	valgrind --log-file=erandal ./push_swap $ARG >> tmp.ps
+	num=$(cat erandal | grep "definitely lost: 0 bytes in 0 blocks" | wc -l | tr -d "[ \t]");
+	num2=$(cat erandal | grep "indirectly lost: 0 bytes in 0 blocks" | wc -l | tr -d "[ \t]");
+	rm -rf erandal
+	rm -rf tmp.ps
+	if ((num  == 0 )) && (( num2 == 0))
+	then
+		echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
+		errm[count]=$ARG
+	else
+		echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
+	fi
+done
+echo ""
+for (( count=1; count<10; count++ ))
+do
+	ARG=`ruby -e "puts (-250..249).to_a.shuffle.join(' ')"`
+	valgrind --log-file=erandal echo "ra sa" | tr -s " " "\n" | ./checker $ARG >> tmp.ps
+	num=$(cat erandal | grep "definitely lost: 0 bytes in 0 blocks" | wc -l | tr -d "[ \t]");
+	num2=$(cat erandal | grep "indirectly lost: 0 bytes in 0 blocks" | wc -l | tr -d "[ \t]");
+	rm -rf erandal
+	rm -rf tmp.ps
+	if ((num  == 0 )) && (( num2 == 0))
+	then
+		echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
+		errm[count]=$ARG
+	else
+		echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
+	fi
+done
+echo ""
 if ((${errm[count]}))
 then
 	echo "\n\033[33;1m Err arguments: \033[0m"
