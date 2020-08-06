@@ -358,3 +358,5 @@ then
 		fi
 	done
 fi
+
+rm -rf *.dSYM
