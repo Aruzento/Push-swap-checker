@@ -34,7 +34,7 @@ echo "\n\tValid check: \n" >> log_checker.txt
 echo "\033[1m[e_char:]\t[w_num:]\t[mx_int:]\t[uc_comm:]\033[0m"
 for (( count=1; count<3; count++ ))
 do
-	ARG=' 0  1 2 3 4 5 '
+	ARG='0 1 2 3 4 5 end'
 	err=$(./push_swap $ARG | tr -d "\n")
 	if [ $err == "Error" ]
 	then
