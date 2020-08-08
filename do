@@ -354,8 +354,7 @@ do
 	then
 		echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
 	else
-		echo $num " " $num2 
-		#echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
+		echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
 	fi
 done
 echo ""
@@ -371,8 +370,7 @@ do
 	then
 		echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
 	else
-		echo $num " " $num2 
-		#echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
+		echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
 	fi
 done
 echo ""
