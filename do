@@ -1,6 +1,6 @@
-make fclean
-make push_swap
-make checker
+make fclean >> log_checker.txt
+make push_swap >> log_checker.txt
+make checker >> log_checker.txt
 
 rm log_checker.txt
 
