@@ -14,16 +14,16 @@ read op
 if [ $op == "-u" ]
 then
 
-echo "\n\t\033[33;1m Norme check: \033[0m" | tr -d "\n"
+echo "\n\t\033[33;1m Norme check:\033[0m" | tr -d "\n"
 echo "\n\tNorme check: \n" >> log_checker.txt
 norminette * > tmp.ps
 num=$(cat tmp.ps | grep "Error" | wc -l | tr -d "[ \t]");
 rm -rf tmp.ps
 if (( num == 0 ))
 then
-	echo "\033[37;1;41m ×\033[0m"
+	echo "\033[37;1;41m ✓\033[0m"
 else
-	echo "\033[37;1;44m ✓\033[0m"
+	echo "\033[37;1;42m ×\033[0m"
 fi
 
 echo "\n\t\033[33;1m Valid check: \033[0m"
@@ -350,12 +350,12 @@ do
 	num2=$(cat erandal | grep "indirectly lost: 0 bytes in 0 blocks" | wc -l | tr -d "[ \t]");
 	rm -rf erandal
 	rm -rf tmp.ps
-	if ((num  == 0 )) && (( num2 == 0))
+	if (( num  == 0 )) && (( num2 == 0))
 	then
-		echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
+		echo "\033[37;1;41m ✓\033[0m" | tr -d "\n"
 		errm[count]=$ARG
 	else
-		echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
+		echo "\033[37;1;42m ×\033[0m" | tr -d "\n"
 	fi
 done
 echo ""
@@ -369,10 +369,10 @@ do
 	rm -rf tmp.ps
 	if (( num  == 0 )) && (( num2 == 0))
 	then
-		echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
+		echo "\033[37;1;41m ✓\033[0m" | tr -d "\n"
 		errm[count]=$ARG
 	else
-		echo "\033[37;1;44m ✓\033[0m" | tr -d "\n"
+		echo "\033[37;1;42m ×\033[0m" | tr -d "\n"
 	fi
 done
 echo ""
