@@ -350,7 +350,7 @@ do
 	num2=$(cat erandal | grep "indirectly lost: 0 bytes in 0 blocks" | wc -l | tr -d "[ \t]");
 	rm -rf erandal
 	rm -rf tmp.ps
-	if (( num  == 0 )) && (( num2 == 0))
+	if (( num  == 1 )) && (( num2 == 1))
 	then
 		echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
 	else
@@ -367,7 +367,7 @@ do
 	num2=$(cat erandal | grep "indirectly lost: 0 bytes in 0 blocks" | wc -l | tr -d "[ \t]");
 	rm -rf erandal
 	rm -rf tmp.ps
-	if (( num  == 0 )) && (( num2 == 0))
+	if (( num  == 1 )) && (( num2 == 1))
 	then
 		echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
 	else
