@@ -3,10 +3,8 @@ make push_swap
 make checker
 
 rm log_checker.txt
-clear
-echo "\033[33;1m author: \033[0m" | tr -d "\n"
-cat -e author
 
+clear
 echo "\n\n    Hi! Enter here type of check:\n\t\033[33;1m-u \033[0m- common check;\n\t\033[33;1m-s \033[0m- stress test;"
 echo "\t\033[33;1m-k \033[0m- kill checker;"
 echo "type here: " | tr -d "\n"
@@ -14,6 +12,10 @@ read op
 
 if [ $op == "-u" ]
 then
+
+clear
+echo "\033[33;1m author: \033[0m" | tr -d "\n"
+cat -e author
 
 echo "\n\t\033[33;1m Norme check:\033[0m" | tr -d "\n"
 echo "\n\tNorme check: \n" >> log_checker.txt
