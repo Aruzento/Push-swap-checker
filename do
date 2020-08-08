@@ -21,9 +21,9 @@ num=$(cat tmp.ps | grep "Error" | wc -l | tr -d "[ \t]");
 rm -rf tmp.ps
 if (( num == 0 ))
 then
-	echo "\033[37;1;41m ✓\033[0m"
+	echo "\033[37;1;42m ✓\033[0m"
 else
-	echo "\033[37;1;42m ×\033[0m"
+	echo "\033[37;1;41m ×\033[0m"
 fi
 
 echo "\n\t\033[33;1m Valid check: \033[0m"
@@ -352,10 +352,10 @@ do
 	rm -rf tmp.ps
 	if (( num  == 0 )) && (( num2 == 0))
 	then
-		echo "\033[37;1;41m ✓\033[0m" | tr -d "\n"
-		errm[count]=$ARG
+		echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
 	else
-		echo "\033[37;1;42m ×\033[0m" | tr -d "\n"
+		echo $num " " $num2 
+		#echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
 	fi
 done
 echo ""
@@ -369,24 +369,13 @@ do
 	rm -rf tmp.ps
 	if (( num  == 0 )) && (( num2 == 0))
 	then
-		echo "\033[37;1;41m ✓\033[0m" | tr -d "\n"
-		errm[count]=$ARG
+		echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
 	else
-		echo "\033[37;1;42m ×\033[0m" | tr -d "\n"
+		echo $num " " $num2 
+		#echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
 	fi
 done
 echo ""
-if ((${errm[count]}))
-then
-	echo "\n\033[33;1m Err arguments: \033[0m"
-	for (( count=0; count<10; count++ ))
-	do
-		if ((${errm[count]}))
-		then
-			echo "[ " ${errm[count]} " ]"
-		fi
-	done
-fi
 make re
 rm -rf *.dSYM
 
