@@ -377,7 +377,6 @@ do
 	fi
 done
 echo ""
-make re
 rm -rf *.dSYM
 
 else
@@ -446,7 +445,6 @@ then
 			echo ""
 		fi
 	done
-	make re
 else
 	if [ $op == "-k" ]
 	then
@@ -461,3 +459,4 @@ else
 	fi
 fi
 fi
+make clean
