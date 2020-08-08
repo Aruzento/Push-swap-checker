@@ -271,7 +271,7 @@ do
 				echo "\033[37;1;45m " | tr -d "\n"
 				./push_swap $ARG | wc -l | tr -d " \t\n"
 				echo "\033[0m " | tr -d "\n"
-				echo "[ 500 nums ] - OK!" >> log_checker.txt
+				echo "[ 100 nums ] - OK!" >> log_checker.txt
 			else
 				echo "\033[37;1;41m " | tr -d "\n"
 				./push_swap $ARG | wc -l | tr -d " \t\n"
@@ -282,7 +282,7 @@ do
 			echo "\033[37;1;42m " | tr -d "\n"
 			./push_swap $ARG | wc -l | tr -d " \t\n"
 			echo "\033[0m " | tr -d "\n"
-			echo "[ 500 nums ] - OK!" >> log_checker.txt
+			echo "[ 100 nums ] - OK!" >> log_checker.txt
 		fi
 	fi
 done
