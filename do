@@ -8,6 +8,7 @@ echo "\033[33;1m author: \033[0m" | tr -d "\n"
 cat -e author
 
 echo "\n\n    Hi! Enter here type of check:\n\t\033[33;1m-u \033[0m- common check;\n\t\033[33;1m-s \033[0m- stress test;"
+echo "\t\033[33;1m-k \033[0m- kill checker;"
 echo "type here: " | tr -d "\n"
 read op
 
@@ -447,8 +448,16 @@ then
 	done
 	make re
 else
-	make fclean
+	if [ $op == "-k" ]
+	then
+		rm log_checker.txt
+		make fclean
+		rm do
+		clear
+		echo "\n\nТы \033[31;1mУБИЛ\033[0m все файлы чекера!\n"
+else
 	clear
 	echo "\nТы ничего не сделал \033[33;1m:(\033[0m\n"
+	fi
 fi
 fi
