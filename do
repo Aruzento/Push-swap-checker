@@ -17,7 +17,7 @@ clear
 echo "\033[33;1m author: \033[0m" | tr -d "\n"
 cat -e author
 
-echo "\n\t\033[33;1m Norme check:\033[0m" | tr -d "\n"
+echo "\n\n\n\t\033[33;1m Norme check:\033[0m" | tr -d "\n"
 echo "\n\tNorme check: \n" >> log_checker.txt
 norminette * > tmp.ps
 num=$(cat tmp.ps | grep "Error" | wc -l | tr -d "[ \t]");
