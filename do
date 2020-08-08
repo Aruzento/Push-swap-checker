@@ -445,8 +445,8 @@ then
 	done
 	make re
 else
+	make fclean
 	clear
 	echo "\nТы ничего не сделал \033[33;1m:(\033[0m\n"
-	make re
 fi
 fi
