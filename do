@@ -72,7 +72,7 @@ do
 	err=$(./push_swap $ARG | tr -d "\n")
 	if [ $err == "Error" ]
 	then
-		echo "\033[37;1;44m ✓\033[0m" | tr -d "\n"
+		echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
 		echo " ps: [ " $ARG " ] - OK!" >> log_checker.txt
 	else
 		echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
@@ -133,7 +133,7 @@ ARG='0 1 2'
 err=$(./push_swap | ./checker $ARG | tr -d "\n")
 if [ $err == "OK" ]
 then
-	echo "\033[37;1;44m ✓\033[0m" | tr -d "\n"
+	echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
 	echo "[ " $ARG " ] - OK!" >> log_checker.txt
 else
 	echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
@@ -156,7 +156,7 @@ do
 	err=$(./push_swap $ARG | wc -l)
 	if (( $err == 0 ))
 	then
-		echo "\033[37;1;44m ✓\033[0m" | tr -d "\n"
+		echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
 		echo "[ " $ARG " ] - OK!" >> log_checker.txt
 	else
 		echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
@@ -168,7 +168,7 @@ ARG='2 1 0'
 err=$(./push_swap $ARG | wc -l)
 if (( $err <= 3))
 then
-	echo "\033[37;1;44m ✓\033[0m" | tr -d "\n"
+	echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
 	echo "[ " $ARG " ] - OK!" >> log_checker.txt
 else
 	echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
@@ -178,7 +178,7 @@ ARG='1 5 2 4 3'
 err=$(./push_swap $ARG | wc -l)
 if (( $err <= 12))
 then
-	echo "\033[37;1;44m ✓\033[0m" | tr -d "\n"
+	echo "\033[37;1;42m ✓\033[0m" | tr -d "\n"
 	echo "[ " $ARG " ] - OK!" >> log_checker.txt
 else
 	echo "\033[37;1;41m ×\033[0m" | tr -d "\n"
