@@ -451,6 +451,7 @@ else
 	if [ $op == "-k" ]
 	then
 		rm log_checker.txt
+		rm tmp.log
 		make fclean
 		rm do
 		clear
