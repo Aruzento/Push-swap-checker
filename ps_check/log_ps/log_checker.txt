@@ -1,0 +1,829 @@
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Valid check: 
+
+[  0 1 2 3 4 5 end  ] - OK!
+[  0 1 2 3 4 5 end  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  one  ] - OK!
+[  one  ] - OK!
+[  0 0  ] - OK!
+[  0 0  ] - OK!
+[  02 4 35 02  ] - OK!
+[  02 4 35 02  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Valid check: 
+
+[  0 1 2 3 4 5 end  ] - OK!
+[  0 1 2 3 4 5 end  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  one  ] - OK!
+[  one  ] - OK!
+[  0 0  ] - OK!
+[  0 0  ] - OK!
+[  02 4 35 02  ] - OK!
+[  02 4 35 02  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Valid check: 
+
+[  0 1 2 3 4 5 end  ] - OK!
+[  0 1 2 3 4 5 end  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  one  ] - OK!
+[  one  ] - OK!
+[  0 0  ] - OK!
+[  0 0  ] - OK!
+[  02 4 35 02  ] - OK!
+[  02 4 35 02  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Valid check: 
+
+[  0 1 2 3 4 5 end  ] - OK!
+[  0 1 2 3 4 5 end  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  one  ] - OK!
+[  one  ] - OK!
+[  0 0  ] - OK!
+[  0 0  ] - OK!
+[  02 4 35 02  ] - OK!
+[  02 4 35 02  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Valid check: 
+
+[  0 1 2 3 4 5 end  ] - OK!
+[  0 1 2 3 4 5 end  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  one  ] - OK!
+[  one  ] - OK!
+[  0 0  ] - OK!
+[  0 0  ] - OK!
+[  02 4 35 02  ] - OK!
+[  02 4 35 02  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Valid check: 
+
+[  0 1 2 3 4 5 end  ] - OK!
+[  0 1 2 3 4 5 end  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  one  ] - OK!
+[  one  ] - OK!
+[  0 0  ] - OK!
+[  0 0  ] - OK!
+[  02 4 35 02  ] - OK!
+[  02 4 35 02  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Valid check: 
+
+[  0 1 2 3 4 5 end  ] - OK!
+[  0 1 2 3 4 5 end  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  one  ] - OK!
+[  one  ] - OK!
+[  0 0  ] - OK!
+[  0 0  ] - OK!
+[  02 4 35 02  ] - OK!
+[  02 4 35 02  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Valid check: 
+
+[  0 1 2 3 4 5 end  ] - OK!
+[  0 1 2 3 4 5 end  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  one  ] - OK!
+[  one  ] - OK!
+[  0 0  ] - OK!
+[  0 0  ] - OK!
+[  02 4 35 02  ] - OK!
+[  02 4 35 02  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Valid check: 
+
+[  0 1 2 3 4 5 end  ] - OK!
+[  0 1 2 3 4 5 end  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  one  ] - OK!
+[  one  ] - OK!
+[  0 0  ] - OK!
+[  0 0  ] - OK!
+[  02 4 35 02  ] - OK!
+[  02 4 35 02  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Valid check: 
+
+[  0 1 2 3 4 5 end  ] - OK!
+[  0 1 2 3 4 5 end  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  one  ] - OK!
+[  one  ] - OK!
+[  0 0  ] - OK!
+[  0 0  ] - OK!
+[  02 4 35 02  ] - OK!
+[  02 4 35 02  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Valid check: 
+
+[  0 1 2 3 4 5 end  ] - OK!
+[  0 1 2 3 4 5 end  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  one  ] - OK!
+[  one  ] - OK!
+[  0 0  ] - OK!
+[  0 0  ] - OK!
+[  02 4 35 02  ] - OK!
+[  02 4 35 02  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Valid check: 
+
+[  0 1 2 3 4 5 end  ] - OK!
+[  0 1 2 3 4 5 end  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  one  ] - OK!
+[  one  ] - OK!
+[  0 0  ] - OK!
+[  0 0  ] - OK!
+[  02 4 35 02  ] - OK!
+[  02 4 35 02  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+
+	Valid check: 
+
+[  0 1 2 3 4 5 end  ] - OK!
+[  0 1 2 3 4 5 end  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  O 1 2 3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  6 1 2	3 4 5  ] - OK!
+[  one  ] - OK!
+[  one  ] - OK!
+[  0 0  ] - OK!
+[  0 0  ] - OK!
+[  02 4 35 02  ] - OK!
+[  02 4 35 02  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  0 1 2 3333333333333333  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -4444444444444 1 2 3  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  -2147483649 1 2 3 4 5  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  3947 93845 0873 2147483648  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - OK!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- OK!
+[ pb, pb, rrr ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- OK!
+[ ARG ]			- OK!
+[ ra rra ra rrr rrr ]	- OK!
+[ pb pb pb ]			- OK!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!
