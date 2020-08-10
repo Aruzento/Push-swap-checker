@@ -827,3 +827,60 @@ Checker program - Identity tests:
 [ 42 ]			- OK!
 [ 42 ]			- OK!
 [ 42 ]			- OK!
+
+	Valid check: 
+
+[  0 1 2 3 4 5 end  ] - KO!   <---- Check this!
+[  0 1 2 3 4 5 end  ] - KO!   <---- Check this!
+[  O 1 2 3 4 5  ] - KO!   <---- Check this!
+[  O 1 2 3 4 5  ] - KO!   <---- Check this!
+[  6 1 2	3 4 5  ] - KO!   <---- Check this!
+[  6 1 2	3 4 5  ] - KO!   <---- Check this!
+[  one  ] - KO!   <---- Check this!
+[  one  ] - KO!   <---- Check this!
+[  0 0  ] - KO!   <---- Check this!
+[  0 0  ] - KO!   <---- Check this!
+[  02 4 35 02  ] - KO!   <---- Check this!
+[  02 4 35 02  ] - KO!   <---- Check this!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - KO!   <---- Check this!
+[  0 0 0 0 0 0 0 0 0 0 0 0 0  ] - KO!   <---- Check this!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - KO!   <---- Check this!
+[  3947 93845 0873 30872 56 3 5464 2 5 25 3  ] - KO!   <---- Check this!
+[  0 1 2 3333333333333333  ] - KO!   <---- Check this!
+[  0 1 2 3333333333333333  ] - KO!   <---- Check this!
+[  -4444444444444 1 2 3  ] - KO!   <---- Check this!
+[  -4444444444444 1 2 3  ] - KO!   <---- Check this!
+[  -2147483649 1 2 3 4 5  ] - KO!   <---- Check this!
+[  -2147483649 1 2 3 4 5  ] - KO!   <---- Check this!
+[  3947 93845 0873 2147483648  ] - KO!   <---- Check this!
+[  3947 93845 0873 2147483648  ] - KO!   <---- Check this!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - KO!   <---- Check this!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - KO!   <---- Check this!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - KO!   <---- Check this!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - KO!   <---- Check this!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - KO!   <---- Check this!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - KO!   <---- Check this!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - KO!   <---- Check this!
+[  0 1 2 3 4 5 6 7 8 9 10  ] - KO!   <---- Check this!
+
+	Correction check:
+
+Checker program - False tests:
+[0 9 1 8 2 7 3 6 4 5]:
+[ sa, pb, rrr ]			- KO!   <---- Check this!
+[ pb, pb, rrr ]			- KO!   <---- Check this!
+[ ra rra ra rrr rrr ]	- KO!   <---- Check this!
+[ pb pb pb ]			- KO!   <---- Check this!
+
+Checker program - Right tests:
+[0 1 2]:
+[ sa, pb, rrr ]			- KO!   <---- Check this!
+[ ARG ]			- KO!   <---- Check this!
+[ ra rra ra rrr rrr ]	- KO!   <---- Check this!
+[ pb pb pb ]			- KO!   <---- Check this!
+
+Checker program - Identity tests:
+[42]:
+[ 42 ]			- OK!
+[ 42 ]			- OK!
+[ 42 ]			- OK!

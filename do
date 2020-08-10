@@ -1,6 +1,17 @@
 rm log_checker.txt
+
 echo "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 clear
+
+if [ -e ./Makefile ]
+then
+	clear
+else
+	clear
+	echo "No \033[31;1mMakefile!\033[0m!"
+	exit 0
+fi
+
 echo "\n\n    Hi! Enter here type of check:\n\t\033[33;1m-u \033[0m- common check;"
 echo "\t\033[33;1m-s \033[0m- stress test;"
 echo "\t\033[33;1m-k \033[0m- kill checker;"
@@ -17,7 +28,7 @@ echo "|"$op"|" > tmp.ps
 num=$(cat tmp.ps | tr -d "\n");
 
 if [ $num == "||" ]
-then 
+then
 	rm tmp.ps
 	echo "\nТы ничего не сделал \033[33;1m:(\033[0m\n"
 	exit 0
@@ -36,36 +47,47 @@ then
 	exit 0
 fi
 
-make fclean >> log_checker.txt
-make push_swap >> log_checker.txt
-make checker >> log_checker.txt
-
 if [ $op == "-c" ]
 then
+	make fclean >> log_checker.txt
+	make push_swap >> log_checker.txt
+	make checker >> log_checker.txt
 	sh ps_check/ps_correction.sh
 	exit 0
 fi
 
 if [ $op == "-leak" ]
 then
+	make fclean >> log_checker.txt
+	make push_swap >> log_checker.txt
+	make checker >> log_checker.txt
 	sh ps_check/ps_valgrind.sh
 	exit 0
 fi
 
 if [ $op == "-num" ]
 then
+	make fclean >> log_checker.txt
+	make push_swap >> log_checker.txt
+	make checker >> log_checker.txt
 	sh ps_check/ps_simple.sh
 	exit 0
 fi
 
 if [ $op == "-v" ]
 then
+	make fclean >> log_checker.txt
+	make push_swap >> log_checker.txt
+	make checker >> log_checker.txt
 	sh ps_check/ps_valid.sh
 	exit 0
 fi
 
 if [ $op == "-u" ]
 then
+	make fclean >> log_checker.txt
+	make push_swap >> log_checker.txt
+	make checker >> log_checker.txt
 	echo "\033[33;1m author: \033[0m" | tr -d "\n"
 	cat -e author
 	echo ""
@@ -90,6 +112,9 @@ fi
 
 if [ $op == "-s" ]
 then
+	make fclean >> log_checker.txt
+	make push_swap >> log_checker.txt
+	make checker >> log_checker.txt
 	sh ps_check/ps_stress.sh
 	exit 0
 fi
@@ -102,6 +127,11 @@ then
 	rm do
 	clear
 	echo "\n\nТы \033[31;1mУБИЛ\033[0m все файлы чекера!\n"
+	exit 0
 fi
+
+rm tmp.ps
+echo "\nТы ничего не сделал \033[33;1m:(\033[0m\n"
+exit 0
 
 make clean
