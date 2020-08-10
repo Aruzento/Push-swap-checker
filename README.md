@@ -10,7 +10,7 @@ New version!
 	2) now u can launch -v -c -s -u -k -leak - to do diff opers
 	
 
-#Interface of checker:
+# Interface of cheker
 
 Hi! Enter here type of check:
         -u - common check;
