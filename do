@@ -130,6 +130,7 @@ then
 	exit 0
 fi
 
+echo 
 rm tmp.ps
 echo "\nТы ничего не сделал \033[33;1m:(\033[0m\n"
 exit 0
