@@ -23,6 +23,8 @@ echo "\t\033[33;1m-num \033[0m- 3 + 5 + 100 + 500 test"
 echo "type here: " | tr -d "\n"
 read op
 
+clear
+
 echo "|"$op"|" > tmp.ps
 
 num=$(cat tmp.ps | tr -d "\n");
