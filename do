@@ -117,7 +117,7 @@ then
 	then
 		echo "\033[37;1;42m✓\033[0m"
 	else
-		echo "\033[37;1;43m"$num"\033[0m"
+		echo "\033[30;1;43m"$num"\033[0m"
 	fi
 
 	sh ps_check/ps_valid.sh
