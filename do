@@ -54,9 +54,9 @@ make fclean >> log_checker.txt
 make push_swap >> log_checker.txt
 make checker >> log_checker.txt
 
-if [ -e ./push_swap]
+if [ -e ./push_swap ]
 then
-	if [ -e ./checker]
+	if [ -e ./checker ]
 	then
 		clear
 	else
