@@ -49,11 +49,27 @@ then
 	exit 0
 fi
 
+
+make fclean >> log_checker.txt
+make push_swap >> log_checker.txt
+make checker >> log_checker.txt
+
+if [ -e ./push_swap]
+then
+	if [ -e ./checker]
+	then
+		clear
+	else
+		echo "No \033[31;1mMakefile!\033[0m!"
+		exit 0
+	fi
+else
+	echo "No \033[31;1mMakefile!\033[0m!"
+	exit 0
+fi
+
 if [ $op == "-c" ]
 then
-	make fclean >> log_checker.txt
-	make push_swap >> log_checker.txt
-	make checker >> log_checker.txt
 	sh ps_check/ps_correction.sh
 	exit 0
 fi
@@ -118,17 +134,6 @@ then
 	make push_swap >> log_checker.txt
 	make checker >> log_checker.txt
 	sh ps_check/ps_stress.sh
-	exit 0
-fi
-
-if [ $op == "-k" ]
-then
-	rm log_checker.txt
-	rm tmp.log
-	make fclean
-	rm do
-	clear
-	echo "\n\nТы \033[31;1mУБИЛ\033[0m все файлы чекера!\n"
 	exit 0
 fi
 
