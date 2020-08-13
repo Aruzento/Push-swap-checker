@@ -22,7 +22,7 @@ then
 	echo "\033[37;1;42m✓\033[0m"
 	echo "\nNo warnings\n" >> log_checker.txt
 else
-	echo "\033[37;1;41m"$num"\033[0m"
+	echo "\033[37;1;45m"$num"\033[0m"
 	norminette * | grep "Warning: " >> log_checker.txt
 fi
 rm -rf tmp.ps
