@@ -112,7 +112,7 @@ fi
 if [ $op == "-clean" ]
 then
 	echo "\n\n\t Are u sure? Its check your program and \033[31;1mMOMENTALLY KILL\033[0m all checker files!"
-	echo "type [y\\n]" | tr -d "\n"
+	echo "type [y or n]: " | tr -d "\n"
 	read op
 	if [ $op == "y" ]
 	then
@@ -126,9 +126,10 @@ then
 		make fclean
 		make kill
 		rm tmp.ps
+	else
+		clear
+		echo "\nТы ничего не сделал \033[32;1m:)\033[0m\n"
 	fi
-	clear
-	echo "\nТы ничего не сделал \033[33;1m:)\033[0m\n"
 	exit 0
 fi
 
