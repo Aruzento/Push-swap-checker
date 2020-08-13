@@ -119,6 +119,7 @@ then
 
 	rm log_checker.txt > tmp.ps
 	make fclean
+	make kill
 	rm tmp.ps
 
 	exit 0
