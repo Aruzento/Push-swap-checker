@@ -109,6 +109,7 @@ then
 	else
 		echo "\033[37;1;41m"$num"\033[0m"
 	fi
+	norminette * > tmp.ps
 	num=$(cat tmp.ps | grep "Warning: " | wc -l | tr -d "[ \t]");
 	rm -rf tmp.ps
 	echo "Errors: " | tr -d "\n"
