@@ -16,6 +16,7 @@ echo "\n\n    Hi! Enter here type of check:\n\t\033[33;1m-u \033[0m- common chec
 echo "\t\033[33;1m-s \033[0m- stress test;"
 echo "\t\033[33;1m-k \033[0m- kill checker;"
 echo "\n\033[33;1mOptional:\033[0m"
+echo "\t\033[33;1m-n \033[0m- check norme test;"
 echo "\t\033[33;1m-c \033[0m- check list test;"
 echo "\t\033[33;1m-v \033[0m- valid checker;"
 echo "\t\033[33;1m-leak \033[0m- valgring test;"
@@ -49,6 +50,35 @@ then
 	exit 0
 fi
 
+if [ $op == "-n" ]
+then
+	echo "\033[33;1m author: \033[0m" | tr -d "\n"
+	cat -e author
+	echo ""
+	echo "\n\t\033[33;1m Norme check: \033[0m"
+	echo "\n\tNorme check: \n" >> log_checker.txt
+	norminette * > tmp.ps
+	num=$(cat tmp.ps | grep "Error" | wc -l | tr -d "[ \t]");
+	rm -rf tmp.ps
+	echo "Errors: " | tr -d "\n"
+	if (( num == 0 ))
+	then
+		echo "\033[37;1;42m✓\033[0m"
+	else
+		echo "\033[37;1;41m"$num"\033[0m"
+	fi
+	norminette * > tmp.ps
+	num=$(cat tmp.ps | grep "Warning: " | wc -l | tr -d "[ \t]");
+	rm -rf tmp.ps
+	echo "Warnings: " | tr -d "\n"
+	if (( num == 0 ))
+	then
+		echo "\033[37;1;42m✓\033[0m"
+	else
+		echo "\033[30;1;43m"$num"\033[0m"
+	fi
+	exit 0
+fi
 
 make fclean >> log_checker.txt
 make push_swap >> log_checker.txt
@@ -112,7 +142,7 @@ then
 	norminette * > tmp.ps
 	num=$(cat tmp.ps | grep "Warning: " | wc -l | tr -d "[ \t]");
 	rm -rf tmp.ps
-	echo "Errors: " | tr -d "\n"
+	echo "Warnings: " | tr -d "\n"
 	if (( num == 0 ))
 	then
 		echo "\033[37;1;42m✓\033[0m"
