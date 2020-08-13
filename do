@@ -109,6 +109,24 @@ then
 	exit 0
 fi
 
+if [ $op == "-clean" ]
+then
+	sh ps_check/ps_norme.sh
+	sh ps_check/ps_valid.sh
+	sh ps_check/ps_correction.sh
+	sh ps_check/ps_simple.sh
+	sh ps_check/ps_valgrind.sh
+
+	rm log_checker.txt > tmp.ps
+	rm tmp.log > tmp.ps
+	make fclean
+	rm erandal > tmp.ps
+	rm tmp.log > tmp.ps
+	rm tmp.ps
+
+	exit 0
+fi
+
 if [ $op == "-s" ]
 then
 	sh ps_check/ps_stress.sh
