@@ -119,6 +119,7 @@ then
 		clear
 		sh ps_check/ps_norme.sh
 		sh ps_check/ps_valid.sh
+		echo ""
 		sh ps_check/ps_correction.sh
 		sh ps_check/ps_simple.sh
 		sh ps_check/ps_valgrind.sh
@@ -127,6 +128,8 @@ then
 		make fclean
 		make kill
 		rm tmp.ps
+		clear
+		echo "\n\033[31;1mСделано...\033[0m\n"
 	else
 		clear
 		echo "\nТы ничего не сделал \033[32;1m:)\033[0m\n"
