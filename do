@@ -76,36 +76,24 @@ fi
 
 if [ $op == "-leak" ]
 then
-	make fclean >> log_checker.txt
-	make push_swap >> log_checker.txt
-	make checker >> log_checker.txt
 	sh ps_check/ps_valgrind.sh
 	exit 0
 fi
 
 if [ $op == "-num" ]
 then
-	make fclean >> log_checker.txt
-	make push_swap >> log_checker.txt
-	make checker >> log_checker.txt
 	sh ps_check/ps_simple.sh
 	exit 0
 fi
 
 if [ $op == "-v" ]
 then
-	make fclean >> log_checker.txt
-	make push_swap >> log_checker.txt
-	make checker >> log_checker.txt
 	sh ps_check/ps_valid.sh
 	exit 0
 fi
 
 if [ $op == "-u" ]
 then
-	make fclean >> log_checker.txt
-	make push_swap >> log_checker.txt
-	make checker >> log_checker.txt
 	echo "\033[33;1m author: \033[0m" | tr -d "\n"
 	cat -e author
 	echo ""
@@ -130,9 +118,6 @@ fi
 
 if [ $op == "-s" ]
 then
-	make fclean >> log_checker.txt
-	make push_swap >> log_checker.txt
-	make checker >> log_checker.txt
 	sh ps_check/ps_stress.sh
 	exit 0
 fi
