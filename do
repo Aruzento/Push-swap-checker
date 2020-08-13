@@ -12,15 +12,16 @@ else
 	exit 0
 fi
 
-echo "\n\n    Hi! Enter here type of check:\n\t\033[33;1m-u \033[0m- common check;"
+echo "\n\n    Hi! Enter here type of check:\n\t\033[33;1m-full \033[0m- full test;"
+echo "\t\033[33;1m-clean \033[0m- check-n-\033[31;1mdelete\033[0m test;"
 echo "\t\033[33;1m-s \033[0m- stress test;"
-echo "\t\033[33;1m-k \033[0m- kill checker;"
-echo "\n\033[33;1mOptional:\033[0m"
+echo "\t\033[33;1m-k \033[0m- kill tmp files;"
+echo "\n\t\033[33;1mOptional:\033[0m"
 echo "\t\033[33;1m-n \033[0m- check norme test;"
 echo "\t\033[33;1m-c \033[0m- check list test;"
 echo "\t\033[33;1m-v \033[0m- valid checker;"
-echo "\t\033[33;1m-leak \033[0m- valgring test;"
-echo "\t\033[33;1m-num \033[0m- 3 + 5 + 100 + 500 test"
+echo "\t\033[33;1m-l \033[0m- valgring test;"
+echo "\t\033[33;1m-p \033[0m- 3 + 5 + 100 + 500 test"
 echo "type here: " | tr -d "\n"
 read op
 
@@ -46,7 +47,7 @@ then
 	rm tmp.log
 	rm tmp.ps
 	clear
-	echo "\n\nТы \033[31;1mУБИЛ\033[0m все файлы чекера!\n"
+	echo "\n\nТы \033[31;1mУБИЛ\033[0m вспомогательные файлы чекера!\n"
 	exit 0
 fi
 
@@ -80,13 +81,13 @@ then
 	exit 0
 fi
 
-if [ $op == "-leak" ]
+if [ $op == "-l" ]
 then
 	sh ps_check/ps_valgrind.sh
 	exit 0
 fi
 
-if [ $op == "-num" ]
+if [ $op == "-p" ]
 then
 	sh ps_check/ps_simple.sh
 	exit 0
@@ -98,7 +99,7 @@ then
 	exit 0
 fi
 
-if [ $op == "-u" ]
+if [ $op == "-full" ]
 then
 	sh ps_check/ps_norme.sh
 	sh ps_check/ps_valid.sh

@@ -1,6 +1,6 @@
 echo "\n\tstress test: 5 \n" >> log_checker.txt
 	echo "\t\033[33;1m stress test: 5 \033[0m"
-	for (( count=1; count<501; count++ ))
+	for (( count=1; count<101; count++ ))
 	do
 		ARG=`ruby -e "puts (-2..2).to_a.shuffle.join(' ')"`
 		if [ './push_swap $ARG | ./checker $ARG | tr -d "\n"' == "KO" ]
@@ -26,7 +26,7 @@ echo "\n\tstress test: 5 \n" >> log_checker.txt
 	echo ""
 	echo "\n\tstress test: 100 \n" >> log_checker.txt
 	echo "\n\t\033[33;1m stress test: 100 \033[0m"
-	for (( count=1; count<501; count++ ))
+	for (( count=1; count<101; count++ ))
 	do
 		ARG=`ruby -e "puts (-50..49).to_a.shuffle.join(' ')"`
 		if [ './push_swap $ARG | ./checker $ARG | tr -d "\n"' == "KO" ]
@@ -45,7 +45,7 @@ echo "\n\tstress test: 5 \n" >> log_checker.txt
 	echo ""
 	echo "\n\tstress test: 500 \n" >> log_checker.txt
 	echo "\n\t\033[33;1m stress test: 500 \033[0m"
-	for (( count=1; count<501; count++ ))
+	for (( count=1; count<251; count++ ))
 	do
 		ARG=`ruby -e "puts (-250..249).to_a.shuffle.join(' ')"`
 		if [ './push_swap $ARG | ./checker $ARG | tr -d "\n"' == "KO" ]
