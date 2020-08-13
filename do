@@ -118,10 +118,7 @@ then
 	sh ps_check/ps_valgrind.sh
 
 	rm log_checker.txt > tmp.ps
-	rm tmp.log > tmp.ps
 	make fclean
-	rm erandal > tmp.ps
-	rm tmp.log > tmp.ps
 	rm tmp.ps
 
 	exit 0
