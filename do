@@ -111,17 +111,24 @@ fi
 
 if [ $op == "-clean" ]
 then
-	sh ps_check/ps_norme.sh
-	sh ps_check/ps_valid.sh
-	sh ps_check/ps_correction.sh
-	sh ps_check/ps_simple.sh
-	sh ps_check/ps_valgrind.sh
+	echo "\n\n\t Are u sure? Its check your program and \033[31;1mMOMENTALLY KILL\033[0m all checker files!"
+	echo "type [y\n]"
+	read op
+	if [ $op == "y" ]
+	then
+		sh ps_check/ps_norme.sh
+		sh ps_check/ps_valid.sh
+		sh ps_check/ps_correction.sh
+		sh ps_check/ps_simple.sh
+		sh ps_check/ps_valgrind.sh
 
-	rm log_checker.txt > tmp.ps
-	make fclean
-	make kill
-	rm tmp.ps
-
+		rm log_checker.txt > tmp.ps
+		make fclean
+		make kill
+		rm tmp.ps
+	fi
+	clear
+	echo "\nТы ничего не сделал \033[33;1m:(\033[0m\n"
 	exit 0
 fi
 
