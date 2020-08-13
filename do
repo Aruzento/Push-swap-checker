@@ -1,4 +1,4 @@
-rm log_checker.txt
+rm ps_check/log_ps/log_checker.txt
 
 echo "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 clear
@@ -116,6 +116,7 @@ then
 	read op
 	if [ $op == "y" ]
 	then
+		clear
 		sh ps_check/ps_norme.sh
 		sh ps_check/ps_valid.sh
 		sh ps_check/ps_correction.sh
