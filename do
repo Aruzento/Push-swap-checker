@@ -52,7 +52,7 @@ fi
 
 if [ $op == "-n" ]
 then
-	sh ps_norme.sh
+	sh ps_check/ps_norme.sh
 	exit 0
 fi
 
@@ -100,7 +100,7 @@ fi
 
 if [ $op == "-u" ]
 then
-	sh ps_norme.sh
+	sh ps_check/ps_norme.sh
 	sh ps_check/ps_valid.sh
 	sh ps_check/ps_correction.sh
 	sh ps_check/ps_simple.sh
